@@ -1,0 +1,10 @@
+{
+  "name": "@lgs-ui-vue3/hooks",
+  "version": "0.0.1",
+  "private": true,
+  "main": "index.ts",
+  "module": "index.ts",
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  }
+}

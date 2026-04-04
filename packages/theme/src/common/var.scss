@@ -1,0 +1,61 @@
+// ==================== 命名空间 ====================
+$namespace: 'lgs' !default;
+
+// ==================== 颜色 ====================
+$color-white: #ffffff !default;
+$color-black: #000000 !default;
+
+$color-primary: #409eff !default;
+$color-primary-light: #66b1ff !default;
+$color-primary-lighter: #a0cfff !default;
+$color-primary-lightest: #d9ecff !default;
+
+$color-success: #67c23a !default;
+$color-success-light: #85ce61 !default;
+$color-success-lighter: #b3e19d !default;
+$color-success-lightest: #e1f3d8 !default;
+
+$color-warning: #e6a23c !default;
+$color-warning-light: #ebb563 !default;
+$color-warning-lighter: #f3d19e !default;
+$color-warning-lightest: #faecd8 !default;
+
+$color-danger: #f56c6c !default;
+$color-danger-light: #f78989 !default;
+$color-danger-lighter: #fab6b6 !default;
+$color-danger-lightest: #fde2e2 !default;
+
+$color-info: #909399 !default;
+$color-info-light: #a6a9ad !default;
+$color-info-lighter: #c8c9cc !default;
+$color-info-lightest: #e9e9eb !default;
+
+// ==================== 文字颜色 ====================
+$text-color-primary: #303133 !default;
+$text-color-regular: #606266 !default;
+$text-color-secondary: #909399 !default;
+$text-color-placeholder: #a8abb2 !default;
+
+// ==================== 边框 ====================
+$border-color: #dcdfe6 !default;
+$border-color-light: #e4e7ed !default;
+$border-color-lighter: #ebeef5 !default;
+$border-color-extra-light: #f2f6fc !default;
+
+$border-radius-base: 4px !default;
+$border-radius-small: 2px !default;
+$border-radius-round: 20px !default;
+$border-radius-circle: 100% !default;
+
+// ==================== 字体 ====================
+$font-size-extra-large: 20px !default;
+$font-size-large: 18px !default;
+$font-size-medium: 16px !default;
+$font-size-base: 14px !default;
+$font-size-small: 13px !default;
+$font-size-extra-small: 12px !default;
+
+// ==================== 间距 ====================
+$padding-large: 12px 20px !default;
+$padding-default: 8px 16px !default;
+$padding-small: 5px 12px !default;

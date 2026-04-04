@@ -1,0 +1,25 @@
+@use './common/var' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// 全局 CSS 变量（方便主题覆盖）
+:root {
+  --lgs-color-primary: #{$color-primary};
+  --lgs-color-success: #{$color-success};
+  --lgs-color-warning: #{$color-warning};
+  --lgs-color-danger: #{$color-danger};
+  --lgs-color-info: #{$color-info};
+  --lgs-color-white: #{$color-white};
+  --lgs-color-black: #{$color-black};
+  --lgs-text-color-primary: #{$text-color-primary};
+  --lgs-text-color-regular: #{$text-color-regular};
+  --lgs-border-color: #{$border-color};
+  --lgs-border-radius-base: #{$border-radius-base};
+  --lgs-font-size-base: #{$font-size-base};
+}

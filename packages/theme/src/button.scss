@@ -1,0 +1,17 @@
+@use 'sass:color';
+@use './common/var' as *;
+@use './mixins/mixins' as *;
+
+// LgsButton 自定义样式覆盖（基于 Element Plus el-button）
+// 通过 .lgs-button 选择器精确覆盖，不影响原生 el-button
+@include b(button) {
+  // 示例：覆盖主色按钮的背景色
+  // &.el-button--primary {
+  //   --el-button-bg-color: #{$color-primary};
+  //   --el-button-border-color: #{$color-primary};
+  //   --el-button-hover-bg-color: #{$color-primary-light};
+  //   --el-button-hover-border-color: #{$color-primary-light};
+  //   --el-button-active-bg-color: #{color.mix($color-black, $color-primary, 10%)};
+  //   --el-button-active-border-color: #{color.mix($color-black, $color-primary, 10%)};
+  // }
+}

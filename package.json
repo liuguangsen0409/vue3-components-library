@@ -1,0 +1,28 @@
+{
+  "name": "lgs-ui-vue3-root",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -C docs dev",
+    "docs:dev": "pnpm -C docs dev",
+    "docs:build": "pnpm -C docs build",
+    "docs:serve": "pnpm -C docs serve",
+    "build": "pnpm -C internal/build build",
+    "clean": "rimraf packages/lgs-ui-vue3/dist"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "rimraf": "^5.0.7",
+    "typescript": "^5.5.0",
+    "vue": "^3.4.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "@parcel/watcher"
+    ]
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
+  }
+}

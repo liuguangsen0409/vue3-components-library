@@ -1,0 +1,30 @@
+{
+  "name": "lgs-ui-vue3",
+  "version": "0.0.1",
+  "description": "A Vue 3 component library",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./dist/theme/index.css": "./dist/theme/index.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@lgs-ui-vue3/components": "workspace:*",
+    "@lgs-ui-vue3/hooks": "workspace:*",
+    "@lgs-ui-vue3/utils": "workspace:*",
+    "@lgs-ui-vue3/theme": "workspace:*"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.0",
+    "element-plus": "^2.7.0"
+  }
+}

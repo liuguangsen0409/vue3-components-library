@@ -1,0 +1,59 @@
+@use '../common/var' as *;
+
+// BEM block
+@mixin b($block) {
+  $B: $namespace + '-' + $block;
+
+  .#{$B} {
+    @content;
+  }
+}
+
+// BEM element
+@mixin e($element) {
+  $selector: &;
+  $current-selector: '';
+
+  @each $unit in $element {
+    $current-selector: #{$current-selector +
+      & +
+      '__' +
+      $unit +
+      ','};
+  }
+
+  @at-root {
+    #{$current-selector} {
+      @content;
+    }
+  }
+}
+
+// BEM modifier
+@mixin m($modifier) {
+  $selector: &;
+  $current-selector: '';
+
+  @each $unit in $modifier {
+    $current-selector: #{$current-selector +
+      & +
+      '--' +
+      $unit +
+      ','};
+  }
+
+  @at-root {
+    #{$current-selector} {
+      @content;
+    }
+  }
+}
+
+// 状态样式，如 is-disabled, is-active
+@mixin when($state) {
+  @at-root {
+    &.is-#{$state} {
+      @content;
+    }
+  }
+}
