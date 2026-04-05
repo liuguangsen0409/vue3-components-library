@@ -1,7 +1,7 @@
 {
-  "name": "lgs-ui-vue3",
+  "name": "@liuguangsen0409/vue3-components-library",
   "version": "0.0.1",
-  "description": "A Vue 3 component library",
+  "description": "A Vue 3 component library based on Element Plus",
   "license": "MIT",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -17,11 +17,8 @@
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "@lgs-ui-vue3/components": "workspace:*",
-    "@lgs-ui-vue3/hooks": "workspace:*",
-    "@lgs-ui-vue3/utils": "workspace:*",
-    "@lgs-ui-vue3/theme": "workspace:*"
+  "publishConfig": {
+    "access": "public"
   },
   "peerDependencies": {
     "vue": "^3.4.0",

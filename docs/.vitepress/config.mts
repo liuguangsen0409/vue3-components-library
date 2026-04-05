@@ -5,6 +5,7 @@ export default defineConfig({
   title: 'Lgs UI Vue3',
   description: 'Vue 3 组件库',
   lang: 'zh-CN',
+  base: '/vue3-components-library/',
 
   themeConfig: {
     nav: [
@@ -31,7 +32,7 @@ export default defineConfig({
       ],
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/' },
+      { icon: 'github', link: 'https://github.com/liuguangsen0409/vue3-components-library' },
     ],
     outline: {
       label: '页面导航',

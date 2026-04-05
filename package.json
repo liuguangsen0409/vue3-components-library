@@ -7,10 +7,13 @@
     "docs:build": "pnpm -C docs build",
     "docs:serve": "pnpm -C docs serve",
     "build": "pnpm -C internal/build build",
-    "clean": "rimraf packages/lgs-ui-vue3/dist"
+    "clean": "rimraf packages/lgs-ui-vue3/dist",
+    "publish:lib": "pnpm build && cd packages/lgs-ui-vue3 && npm publish",
+    "docs:deploy": "pnpm docs:build && gh-pages -d docs/.vitepress/dist"
   },
   "devDependencies": {
     "@types/node": "^20.14.0",
+    "gh-pages": "^6.3.0",
     "rimraf": "^5.0.7",
     "typescript": "^5.5.0",
     "vue": "^3.4.0"
