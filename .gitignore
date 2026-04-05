@@ -6,3 +6,4 @@ dist
 .temp
 .pnpm-store
 docs/.vitepress/cache
+docs/superpowers
