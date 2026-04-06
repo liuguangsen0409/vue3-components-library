@@ -1,0 +1,9 @@
+@use './common/var' as *;
+@use './mixins/mixins' as *;
+
+@include b(footer) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

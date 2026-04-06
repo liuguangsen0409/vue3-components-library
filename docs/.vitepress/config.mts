@@ -27,6 +27,7 @@ export default defineConfig({
           text: '基础组件',
           items: [
             { text: 'Button 按钮', link: '/zh-CN/component/button' },
+            { text: 'Footer 页脚', link: '/zh-CN/component/footer' },
           ],
         },
       ],
