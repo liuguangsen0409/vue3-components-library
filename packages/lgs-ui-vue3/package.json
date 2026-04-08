@@ -6,13 +6,27 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/types/index.d.ts",
+  "sideEffects": [
+    "dist/theme/**"
+  ],
   "exports": {
     ".": {
       "import": "./dist/index.es.js",
       "require": "./dist/index.cjs.js",
       "types": "./dist/types/index.d.ts"
     },
-    "./dist/theme/index.css": "./dist/theme/index.css"
+    "./es/components/*": {
+      "import": "./dist/es/components/*/index.mjs"
+    },
+    "./lib/components/*": {
+      "require": "./dist/lib/components/*/index.js"
+    },
+    "./theme/*": "./dist/theme/*",
+    "./dist/theme/index.css": "./dist/theme/index.css",
+    "./resolver": {
+      "import": "./dist/resolver.mjs",
+      "require": "./dist/resolver.cjs"
+    }
   },
   "files": [
     "dist"
