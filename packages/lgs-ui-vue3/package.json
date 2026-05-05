@@ -1,6 +1,6 @@
 {
   "name": "@liuguangsen0409/vue3-components-library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Vue 3 component library based on Element Plus",
   "license": "MIT",
   "main": "dist/index.cjs.js",
@@ -31,10 +31,6 @@
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  },
   "peerDependencies": {
     "vue": "^3.4.0",
     "element-plus": "^2.7.0"

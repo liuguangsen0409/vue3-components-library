@@ -8,7 +8,7 @@
     "docs:serve": "pnpm -C docs serve",
     "build": "pnpm -C internal/build build",
     "clean": "rimraf packages/lgs-ui-vue3/dist",
-    "publish:lib": "pnpm build && cd packages/lgs-ui-vue3 && npm publish",
+    "publish:lib": "pnpm build && cd packages/lgs-ui-vue3 && npm publish --registry https://registry.npmjs.org/",
     "docs:deploy": "pnpm docs:build && gh-pages -d docs/.vitepress/dist"
   },
   "devDependencies": {
